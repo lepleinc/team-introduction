@@ -15,7 +15,7 @@ img {
 
 .header-section {
   width: 100%;
-  padding: 30px 50px 0;
+  padding: 30px 50px 10px;
 }
 
 .site-logo {
@@ -45,8 +45,8 @@ img {
   Identity Section
 ---------------------*/
 .identity-section {
-  height: 800px;
-  padding-top: 260px;
+  height: 500px;
+  padding-top: 150px;
   background-image: url();
   background-color: #f3f7f9;
   background-size: cover;
