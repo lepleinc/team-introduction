@@ -61,5 +61,21 @@ img {
 }
 
 /*---------------------
+  Introduction Section
+---------------------*/
+.member-portrait {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%
+}
+
+.member-img {
+  width: 100%;
+  height: auto;
+}
+
+/*---------------------
   Responsive
 ---------------------*/
