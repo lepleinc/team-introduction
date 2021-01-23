@@ -113,6 +113,8 @@ img {
 ---------------------*/
 .introduction-section {
   padding: 50px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .introduction-section h2 {
