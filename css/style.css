@@ -1,4 +1,11 @@
 /*---------------------
+  Color Template
+  Blue: #0080cc
+  Cyan: #16d0c5
+  White-Background: #f3f7f9
+---------------------*/
+
+/*---------------------
   Common CSS
 ---------------------*/
 @font-face {
@@ -9,9 +16,12 @@
 body {
   font-family: 'KoPub';
   -webkit-font-smoothing: antialiased;
+
+  width: 100vw;
 }
 
 h2 {
+  font-weight: bold;
   color: #0080cc;
   margin-bottom: 50px;
 }
@@ -31,6 +41,15 @@ img {
 .text-center {
   text-align: center;
 }
+
+.text-blue {
+  color: #0080cc;
+}
+
+.text-white {
+  color: #f3f7f9;
+}
+
 
 /*---------------------
   Header section
@@ -63,6 +82,7 @@ img {
   margin-right: 30px;
 }
 
+
 /*---------------------
   Identity Section
 ---------------------*/
@@ -83,6 +103,14 @@ img {
 }
 
 /*---------------------
+  Key Section
+---------------------*/
+.key-section {
+  background: linear-gradient(to right, #0080cc, #16d0c5);
+}
+
+
+/*---------------------
   Introduction Section
 ---------------------*/
 .introduction-section {
@@ -93,29 +121,61 @@ img {
   margin-bottom: 40px;
 }
 
-.member-profile {
+.member {
+  margin: 20px 10px;
+  padding: 0 0 20px 0;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.member .row {
   display: flex;
-  align-items: flex-end;
-  padding-left: 20px;
-  margin-bottom: 50px;
+  align-items: center;
+
+  margin: 20px 0;
+}
+
+.member-profile {
+  padding: 20px 0;
+  background-color: #f3f7f9;
+}
+
+.member-name {
+  display: block;
+  text-align: center;
+}
+
+.member-comment {
+  margin: 20px 0 10px 0;
+  text-align: center;
 }
 
 .member-profile h3 {
-  margin-bottom: 0;
-  font-weight: 400;
-  padding-left: 10px;
-  margin-right: 10px;
   display: inline-block;
+  margin-bottom: 0;
+  font-weight: 600;
+  padding-left: 10px;
+  margin-right: 5px;
+}
+
+.member h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 15px;
 }
 
 .member-profile p {
   margin-bottom: 0px;
+  display: inline-block;
 }
 
 .member-portrait {
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   overflow: hidden;
   border-radius: 50%
 }
@@ -125,6 +185,11 @@ img {
   height: auto;
 }
 
+.member ul {
+  list-style-type: disc;
+  margin-bottom: 0;
+}
+
 /*---------------------
   Feature Section
 ---------------------*/
@@ -132,9 +197,20 @@ img {
   padding: 50px 0;
   background-color: #f3f7f9;
 }
-.features {
+
+/*---------------------
+  Footer Section 
+---------------------*/
+.footer-section {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #0080cc, #16d0c5);
+  height: 50px;
+}
+
+.footer-section p {
+  color: #f3f7f9;
+  margin-bottom: 0;
 }
 
 /*---------------------
