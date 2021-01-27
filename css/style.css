@@ -5,6 +5,7 @@
   White-Background: #f3f7f9
 ---------------------*/
 
+
 /*---------------------
   Common CSS
 ---------------------*/
@@ -16,24 +17,23 @@
 body {
   font-family: 'KoPub';
   -webkit-font-smoothing: antialiased;
+
+  font-size: 14px;
+  max-width: 100vw;
 }
 
 h2 {
   font-weight: bold;
   color: #0080cc;
-  margin-bottom: 50px;
-}
-
-img {
-  max-width: 100%;
+  margin-bottom: 5rem;
 }
 
 .section-title {
-  margin-bottom: 60px;
+  margin-bottom: 5rem;
 }
 
 .section-title h2 {
-  margin-bottom: 20px
+  margin-bottom: 0.5rem
 }
 
 .text-center {
@@ -48,13 +48,21 @@ img {
   color: #f3f7f9;
 }
 
+.text-cyan {
+  color: #16d0c5;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
 
 /*---------------------
   Header section
 ---------------------*/
 .header-section {
   width: 100%;
-  padding: 30px 50px 10px;
+  padding: 30px 0 20px;
 }
 
 .site-logo {
@@ -62,19 +70,22 @@ img {
 }
 
 .main-menu {
+  margin: 0;
   float: right;
 }
 
 .menu-list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .menu-list li {
   display: inline;
+  margin: 0 10px;
 }
 
 .menu-list li a {
-  display: inline-block;
   font-size: 1.5rem;
   margin-right: 0.5rem;
 }
@@ -204,6 +215,7 @@ img {
   margin-bottom: 0;
 }
 
+
 /*---------------------
   Feature Section
 ---------------------*/
@@ -225,7 +237,6 @@ img {
   transition: 0.3s;
 
   border-radius: 5px;
-
   background: linear-gradient(to right, #00a3cc, #00c798)
 }
 
@@ -233,7 +244,76 @@ img {
   font-weight: bold;
   font-size: 1.7rem;
   color: #f3f7f9;
+}
 
+
+/*---------------------
+  Curriculum Section
+---------------------*/
+.curriculum-section {
+  padding: 2rem 0;
+  width: 100%;
+  background: linear-gradient(to right, #00a3cc, #00c798);
+}
+
+.curriculum-section h3 {
+  font-size: 1.7rem;
+}
+
+.curriculum-img {
+  display: block;
+
+  margin: 0 auto 1rem;
+  height: 85%;
+  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.curriculum-img-overlap {
+  display: block;
+
+  margin-bottom: 1rem;
+  width: 70%;
+  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.curriculum-container-overlap {
+  position: relative;
+  height: 35vw;
+
+  margin: 0 auto;
+  display: block;
+}
+
+.curriculum-container {
+  height: 35vw;
+
+  margin: 0 auto;
+  display: block;
+}
+
+.front {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  z-index: 1;
+
+  border-radius: 1rem;
+  width: 60%;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 40%;
+
+  border-radius: 1rem;
+  width: 60%;
+}
+
+.curriculum-section ul {
+  list-style-type: square;
 }
 
 /*---------------------
@@ -243,7 +323,7 @@ img {
   display: flex;
   align-items: center;
   background: linear-gradient(to right, #0080cc, #16d0c5);
-  height: 50px;
+  height: 4rem;
 }
 
 .footer-section p {
@@ -254,3 +334,56 @@ img {
 /*---------------------
   Responsive
 ---------------------*/
+/* Medium Screen */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+/* Large Mobile */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  body {
+    font-size: 13px;
+  }
+
+  .curriculum-container {
+    position: relative;
+    
+    height: 40vh;
+    display: block;
+  }
+}
+
+/* Small Mobile */
+@media only screen and (max-width: 479px) {
+  body {
+    font-size: 10px;
+  }
+
+  .curriculum-img {
+    height: 45%;
+  }
+
+  .curriculum-container-overlap {
+    position: relative;
+    
+    height: 50vh;
+    display: block;
+  }
+
+  .curriculum-container {
+    position: relative;
+    
+    height: 50vh;
+    display: block;
+  }
+
+  .curriculum-img {
+    height: 85%;
+  }
+
+  .curriculum-section {
+    height: 300vh;
+  }
+}
