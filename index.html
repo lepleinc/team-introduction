@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,13 +20,13 @@
             <a href="index.html">
                 <img src="./img/leple-logo.png" class="site-logo" alt="leple-logo">
             </a>
-            <nav class="main-menu">
+            <!-- <nav class="main-menu">
                 <ul class="menu-list">
                     <li><a href="">과외 특징</a></li>
                     <li><a href="">강사 소개</a></li>
                     <li><a href="">교육 과정</a></li>
                 </ul>
-            </nav>
+            </nav> -->
         </div>
     </header>
     <!-- header section end -->
@@ -36,9 +36,26 @@
     <section class="identity-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <h2>Math via <span>Data</span></h2>
-                    <h3>팀 레플은 체계적인 <span>데이터</span>로 수학의 내일을 준비합니다.</h3>
+                <div class="col-md-6">
+                    <div class="identity-description">
+                        <h2>Math via <span>Data</span></h2>
+                        <h3>팀 레플은 체계적인 <span>데이터</span>로 수학의 내일을 준비합니다.</h3>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="identity-img" src="./img/Data report-pana.png" alt="identity">
+                </div>
+            </div>
+            <div class="row">
+                <div class="row identity-team">
+                    <div class="col-md-5">
+                        <img src="/img/team.svg" alt="team">
+                    </div>
+                    <div class="col-md-7 identity-team-description">
+                        <h2>팀 레플은 포항공대 재학생으로 구성된 수학 과외 전문 팀 입니다.</h2>
+                        <p>저희 팀은 여러분들과 같이 중ㆍ고등학교 시절 수학 실력을 올리기 위해, 그 누구보다 치열하게 고민하고 노력한 선생님들로 구성되어 있습니다. 저희는 누구보다 여러분의 힘듬에 공감하고 있으며, 그 아픔을 덜어주고자 전문 과외 팀을 꾸리게 되었습니다.
+                        다양한 수학 교육 경험에 더해, 공학적 도메인(데이터 사이언스)을 활용해. 여러분들이 수학을 효율적이고 효과적으로 공부할 수 있는 방법을 꾸준히 연구ㆍ개발하고 있습니다.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,11 +65,8 @@
 
     <!-- Key section -->
     <section class="key-section">
-        <div class="container-fluid">
-            <div class="row text-center text-white key-paragraph">
-                <h2>팀 레플은 포항공대 재학생으로 구성된 수학 과외 전문 팀 입니다.</h2>
-                <h3>중/고등학교 시절, 수학 실력을 올리기 위해 그 누구보다 치열하게 고민해본 이 저희입니다.</h3>
-            </div>
+        <div class="container-fluid text-center">
+            <h2 class="text-white">'데이터를 통한 수학'으로 여러분들의 힘든 여정에 도움이 될 수 있기를 기대합니다.</h2>
         </div>
 
     </section>
@@ -61,118 +75,162 @@
 
     <!-- introduction section -->
     <section class='introduction-section'>
+        <h2>강사 소개</h2>
         <div class="container">
-            <h2>강사 소개</h2>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="member">
-                        <div class="member-profile">
-                            <div class="member-portrait">
-                                <img src="./img/juhun_2.jpg" alt="juhun" class="member-img">
+                <div class="col-md-5 card">
+                    <div class="introduction-profile">
+                        <div class="introduction-portrait">
+                            <img src="./img/juhun_2.jpg" alt="juhun" class="introduction-portrait-img">
+                        </div>
+                        <h3>장주훈<span>선생님</span></h3>
+                        <ul class="introduction-hashtag">
+                            <li>#열정적인</li>
+                            <li>#성실한</li>
+                            <li>#스파르타</li>
+                        </ul>
+                    </div>
+
+                    <div class="introduction-description-container">
+                        <div class="row">
+                            <div class="col-xs-3 text-center">
+                                <h4 class="introduction-index">선생님 경력</h4>
                             </div>
-                            <div class="member-name">
-                                <h3>장주훈</h3>
-                                <p>선생님</p>
-                            </div>
-                            <div class="member-comment">
-                                <p class="text-blue">#열정적인 #성실한 #스파르타</p>
+                            <div class="col-xs-9">
+                                <ul>
+                                    <li>대구영남고등학교 졸업</li>
+                                    <li>포항공대 산업경영공학과 4학년 졸업</li>
+                                    <li>3년 내내 수학 과목(내신/모의고사) 1등급 유지<br>(1,2학년 수학 모의고사 올 100점)</li>
+                                    <li>포항공대 수학 경시대회 동상 수상</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="member-career">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <h4 class="text-center">선생님 경력</h4>
-                                </div>
-                                <div class="col-xs-8">
-                                    <ul>
-                                        <li>대구영남고등학교 졸업</li>
-                                        <li>포항공대 산업경영공학과 4학년 재학</li>
-                                        <li>3년 내내 수학 과목(내신/모의고사) 1등급 유지<br>(1,2학년 수학 모의고사 올 100점)</li>
-                                    </ul>
-                                </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <h4 class="text-center">교육 경력</h4>
-                                </div>
-                                <div class="col-xs-8">
-                                    <ul>
-                                        <li>다수의 중등, 고등학생 과외 경험</li>
-                                        <li>수학 학원 강사 경험</li>
-                                        <li>대구시 달성군 그룹 교육 봉사 경험</li>
-                                        <li>청소년 공학/과학 교육 캠프 멘토링 경험 4회</li>
-                                    </ul>
-                                </div>
+                        <div class="row">
+                            <div class="col-xs-3 text-center">
+                                <h4 class="introduction-index">교육 경력</h4>
                             </div>
+                            <div class="col-xs-9">
+                                <ul>
+                                    <li>다수의 중등, 고등학생 과외 경험</li>
+                                    <li>수학 학원 강사 경험</li>
+                                    <li>대구시 달성군 그룹 교육 봉사 경험</li>
+                                    <li>청소년 공학/과학 교육 캠프 멘토링 경험 4회</li>
+                                </ul>
+                            </div>
+                        </div>
 
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <h4 class="text-center">학년군</h4>
-                                </div>
-                                <div class="col-xs-8">
-                                    <ul>
-                                        <li>선호 학년군 : 고등학교 1,2학년</li>
-                                        <li>가능 학년군 : 예비 중1 ~ 고3</li>
-                                    </ul>
-                                </div>
+                        <div class="row">
+                            <div class="col-xs-3 text-center">
+                                <h4 class="introduction-index">학년군</h4>
+                            </div>
+                            <div class="col-xs-9">
+                                <ul>
+                                    <li>선호 학년군 : 고등학교 1,2학년</li>
+                                    <li>가능 학년군 : 예비 중1 ~ 고3</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="member">
-                        <div class="member-profile">
-                            <div class="member-portrait">
-                                <img src="./img/jiwon.JPG" alt="jiwon" class="member-img">
+                <div class="col-md-5 col-md-offset-2 card">
+                    <div class="introduction-profile">
+                        <div class="introduction-portrait">
+                            <img src="./img/jiwon.JPG" alt="jiwon" class="introduction-portrait-img">
+                        </div>
+                        <h3>박지원<span>선생님</span></h3>
+                        <ul class="introduction-hashtag">
+                            <li>#밀착관리</li>
+                            <li>#친절한</li>
+                            <li>#자기주도학습</li>
+                            <li>#과학고</li>
+                        </ul>
+                    </div>
+                    <div class="introduction-description-container">
+                        <div class="row">
+                            <div class="col-xs-3 text-center">
+                                <h4 class="introduction-index">선생님 경력</h4>
                             </div>
-                            <div class="member-name">
-                                <h3>박지원</h3>
-                                <p>선생님</p>
-                            </div>
-                            <div class="member-comment">
-                                <p class="text-blue">#밀착관리 #친절한 #자기주도학습 #과학고</p>
+                            <div class="col-xs-9">
+                                <ul>
+                                    <li>전남과학고등학교 졸업</li>
+                                    <li>포항공과대학교 기계공학과 4학년 졸업</li>
+                                    <li>포항공대, 카이스트, 지스트 동시 합격</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="member-career">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <h4 class="text-center">선생님 경력</h4>
-                                </div>
-                                <div class="col-xs-8">
-                                    <ul>
-                                        <li>전남과학고등학교 졸업</li>
-                                        <li>포항공과대학교 기계공학과 4학년 재학</li>
-                                        <li>포항공대, 카이스트, 지스트 동시 합격</li>
-                                    </ul>
-                                </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <h4 class="text-center">교육 경력</h4>
-                                </div>
-                                <div class="col-xs-8">
-                                    <ul>
-                                        <li>다수의 중등, 고등학생 과외 경험</li>
-                                        <li>과학고 대비 중등 화상과외</li>
-                                        <li>포항시 양학지역아동센터 수학 교육 봉사</li>
-                                    </ul>
-                                </div>
+                        <div class="row">
+                            <div class="col-xs-3 text-center">
+                                <h4 class="introduction-index">교육 경력</h4>
                             </div>
+                            <div class="col-xs-9">
+                                <ul>
+                                    <li>다수의 중등, 고등학생 과외 경험</li>
+                                    <li>과학고 대비 중등 화상과외</li>
+                                    <li>포항시 양학지역아동센터 수학 교육 봉사</li>
+                                </ul>
+                            </div>
+                        </div>
 
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <h4 class="text-center">학년군</h4>
-                                </div>
-                                <div class="col-xs-8">
-                                    <ul>
-                                        <li>선호 학년군 : 중학생 전학년, 고등학교 1학년</li>
-                                        <li>가능 학년군 : 예비 중1~고2</li>
-                                    </ul>
-                                </div>
+                        <div class="row">
+                            <div class="col-xs-3 text-center">
+                                <h4 class="introduction-index">학년군</h4>
                             </div>
+                            <div class="col-xs-9">
+                                <ul>
+                                    <li>선호 학년군 : 중학생 전학년, 고등학교 1학년</li>
+                                    <li>가능 학년군 : 예비 중1~고2</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row card introduction-data_manager">
+                <div class="col-md-4 introduction-data_manager-profile">
+                    <div class="row">
+                        <div class="col-md-6 introduction-data-manager-portrait">
+                            <img src="/img/data-manager.svg" alt="data-manager">
+                            <h3 class="text-center">데이터 매니저</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="introduction-data_manager-hashtag">
+                                <ul>
+                                    <li>#부지런한</li>
+                                    <li>#분석적인</li>
+                                    <li>#꼼꼼한</li>
+                                    <li>#전형적인 공대생</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="col-md-8 introduction-description-container">
+                    <div class="row">
+                        <div class="col-xs-3 text-center">
+                            <h4 class="introduction-index">선생님 특징</h4>
+                        </div>
+                        <div class="col-xs-9">
+                            <ul>
+                                <li>현업 인공지능(데이터 사이언스) 개발자</li>
+                                <li>에듀테크 (수학 분야) 서비스 기획 및 개발 진행중</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3 text-center">
+                            <h4 class="introduction-index">선생님 역할</h4>
+                        </div>
+                        <div class="col-xs-9">
+                            <ul>
+                                <li>학생 학습 데이터 종합 관리</li>
+                                <li>단원별/유형별/난이도별 데이터 분류</li>
+                                <li>메인 선생님 보조 및 데이터 분석 결과 도출</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -184,74 +242,80 @@
 
     <!-- feature section -->
     <section class="feature-section">
-        <div class="section-title text-center">
-            <h2>왜 레플의 과외를 선택해야하나요?</h2>
-            <p>레플의 과외는...</p>
-        </div>
         <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-md-12 section-title text-center">
+                    <h2>왜 레플의 과외를 선택해야하나요?</h2>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-4">
                     <div class="feature-card">
                         <i class="bi bi-intersect feature-icon"></i>
-                        <h3>학원의 커리큘럼과 과외의 맞춤 학습을 한번에</h3>
+                        <h3>대학생 과외는 비체계적이라는 편견은 이제 그만!</h3>
                     </div>
+                    <p>학원의 커리큘럼과 과외의 맞춤 학습을 한번에</p>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card">
                         <i class="bi bi-record-circle-fill feature-icon"></i>
-                        <h3>튼튼한 수학 체력을 만들고 싶다면 매일매일 기록하세요</h3>
+                        <h3>나의 학습 결과를 매일 사진으로 남겨보세요!</h3>
                     </div>
+                    <p>튼튼한 수학 체력을 만들고 싶다면 매일매일 기록하세요</p>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card">
                         <i class="bi bi-bar-chart-line-fill feature-icon"></i>
-                        <h3>부족한 개념, 자주 틀리는 문제 유형을 데이터로 알기 쉽게</h3>
+                        <h3>데이터는 모든 것을 말해줘요!</h3>
                     </div>
+                    <p>부족한 개념, 자주 틀리는 문제 유형을 데이터로 알기 쉽게</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
                     <div class="feature-card">
                         <i class="bi bi-calendar2-check-fill feature-icon"></i>
-                        <h3>분석된 데이터로 최적의 학습 과정을 설계</h3>
+                        <h3>부모님도, 학생도 알기 쉽게 보여드려요</h3>
                     </div>
+                    <p>분석된 데이터로 최적의 학습 과정을 설계</p>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card">
                         <i class="bi bi-file-earmark-bar-graph-fill feature-icon"></i>
-                        <h3>부모님도, 학생도 알기 쉽게 보여드려요 :)</h3>
+                        <h3>비효율적인 공부는 그만!</h3>
                     </div>
+                    <p>부모님도, 학생도 알기 쉽게 보여드려요 :)</p>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card">
                         <i class="bi bi-award-fill feature-icon"></i>
-                        <h3>검증된 강사의 진로/진학/입시/멘토링</h3>
+                        <h3>전문성과 친절함을 모두 갖춘 멘토링을 받아보세요.</h3>
                     </div>
+                    <p>검증된 강사의 진로/진학/입시/멘토링</p>
                 </div>
             </div>
         </div>
     </section>
     <!-- feature section end -->
 
-    <!-- curriculum section -->
-    <section class='curriculum-section text-white'>
-
-        <h2 class="text-center section-title text-white">레플의 차별화된 ‘데이터 코칭 시스템’</h2>
-            <div class="text-center">
+    <!-- Report Section -->
+    <section class='report-section text-white'>
+        <h2 class="text-center text-white">레플의 차별화된 ‘데이터 코칭 시스템’</h2>
+            <div class="text-center report-title-description">
                 <p>‘1:1 밀착 교육’이라는 과외의 특성과 ‘데이터 분석＇을 전문으로 하고 있는 공대생 선생님들의 특성을 접목시켜 데이터를 통한 밀착 코칭을 실현했습니다.
                     학생의 학습 내용 및 현황을 수치화된 데이터로 도출하여, Daily, Weekly, Monthly에 따라 각기 다른 형태로 ‘데이터 코칭＇을 진행합니다.</p>
             </div>
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3 class="text-center text-white">DAILY</h3>
-                    <div class="curriculum-container-overlap">
-                        <img src="./img/daily_report.png" class="curriculum-img-overlap front" alt="daily">
-                        <img src="./img/daily_kakaotalk.png" class ="curriculum-img-overlap back" alt="daily_kakaotalk">
-                    </div>
-
-                    <h4 class="text-bold">데일리 학습 체크</h4>
+        <div class="container">
+            <div class="report-circle">
+                <h3 class="text-center text-blue">DAILY</h3>
+            </div>
+            <div class="row report-list">
+                <div class="col-md-5 report-img-container">
+                    <img src="./img/daily_report.png" class="report-img" alt="daily-report">
+                </div>
+                <div class="col-md-7 report-description">
+                    <h4>데일리 학습 체크</h4>
                     <ul>
                         <li>하루를 마무리하며 매일 공부한 학습 내용을 사진 형태로 선생님에게 전송합니다.</li>
                         <li>학생의 학습 내용을 ‘데이터 매니저＇선생님께서 면밀히 분석하여, 데일리 학습 대시보드 형태로 학생과 부모님께 매일 공유 드립니다.</li>
@@ -259,39 +323,40 @@
                         <li>이를 통해 학생의 공부 방향성을 바로잡고 자기주도적 학습 역량을 함양 시킵니다.</li>
                     </ul>
                 </div>
+            </div>
 
-
-                <div class="col-md-4">
-                    <h3 class="text-center text-white">WEEKLY</h3>
-                    <div class="curriculum-container">
-                        <img src="./img/weekly_report.png" class="curriculum-img" alt="daily">
-                    </div>
-
-                    <h4 class="text-bold">위클리 학습 레포트</h4>
+            <div class="report-circle">
+                <h3 class="text-center text-blue">WEEKLY</h3>
+            </div>
+            <div class="row report-list">
+                <div class="col-md-5 report-img-container">
+                    <img src="/img/weekly_report.png" style="width: 60%;" class="report-img" alt="weekly-report">
+                </div>
+                <div class="col-md-7 report-description">
+                    <h4>위클리 학습 레포트</h4>
                     <ul>
                         <li>데일리 학습 데이터를 정리 및 분석하여 매월 둘째 주에 학습 레포트를 학생과 학부모님께 공유 드립니다.</li>
                         <li>2주 동안 쌓인 데이터를 활용하여 <span class="text-bold">학습 추이 분석</span>, <span class="text-bold">유형 분석</span>, <span class="text-bold">취약점 분석</span> 등을 진행합니다.</li>
                         <li>단원별/유형별 분석, 문항별 세부 분석을 통해 학생이 공부한 내용을 매일 점검합니다.</li>
                     </ul>
                 </div>
+            </div>
 
-
-                <div class="col-md-4">
-                    <h3 class="text-center text-white">MONTHLY</h3>
-                    <div class="curriculum-container-overlap">
-                        <img src="./img/monthly_report_1.png" class="curriculum-img-overlap front" alt="daily">
-                        <img src="./img/monthly_report_2.png" class ="curriculum-img-overlap back" alt="daily_kakaotalk">
-                    </div>
-
-                    <h4 class="text-bold">정기 학습 레포트</h4>
+            <div class="report-circle">
+                <h3 class="text-center text-blue">MONTHLY</h3>
+            </div>
+            <div class="row report-list">
+                <div class="col-md-5 report-img-container">
+                    <img src="./img/monthly_report.png" class="report-img" alt="monthly-report">
+                </div>
+                <div class="col-md-7 report-description">
+                    <h4>정기 학습 레포트</h4>
                     <ul>
                         <li>한달 동안 수집된 학습 데이터와 현장 교육 결과를 종합하여 매월 마지막 주에 정기 학습 레포트를 작성합니다.</li>
                         <li>‘목표 대비 달성 수준 분석’ 및 ‘학습 현황 분석＇을 통해 전반적인 학습 상태를 점검하고, 필요시 목표 재설정을 진행합니다.</li>
                         <li>이를 통해 학생의 공부 방향성을 바로잡고 자기주도적 학습 역량을 함양 시킵니다.</li>
                     </ul>
                 </div>
-
-
             </div>
         </div>
     </section>
@@ -301,17 +366,27 @@
     <footer class="footer-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
+                <div class="col-md-4">
                     <p>Copyright &copy 2021 LEPLE | All rights reserved.</p>
                 </div>
             </div>
 
+            <hr>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Credits</p>
+                    <a href="https://storyset.com/data" class="text-white">Illustration by Freepik Storyset</a> <br>
+                    <a href="https://storyset.com/business" class="text-white">Illustration by Freepik Storyset</a>
+                </div>
+            </div>
         </div>
     </footer>
     <!-- footer end -->
 
     <!-- Javascript & JQuery -->
-    <script src="./js/bootstrap.min.js"></script>
     <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src='./js/html2canvas.js'></script>
 </body>
 </html>

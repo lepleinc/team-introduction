@@ -14,9 +14,15 @@
   src: url('../font/KoPubWorld_Dotum_Medium.woff');
 }
 
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   font-family: 'KoPub';
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 
   font-size: 14px;
   max-width: 100vw;
@@ -26,6 +32,10 @@ h2 {
   font-weight: bold;
   color: #0080cc;
   margin-bottom: 5rem;
+}
+
+section {
+  padding: 5rem 0;
 }
 
 .section-title {
@@ -56,13 +66,21 @@ h2 {
   font-weight: bold;
 }
 
+.card {
+  padding: 0;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+  margin-bottom: 2rem;
+}
+
 
 /*---------------------
   Header section
 ---------------------*/
 .header-section {
   width: 100%;
-  padding: 30px 0 20px;
+  padding: 30px 0;
 }
 
 .site-logo {
@@ -95,126 +113,143 @@ h2 {
   Identity Section
 ---------------------*/
 .identity-section {
-  height: 500px;
-  padding-top: 150px;
   background-image: url();
   background-color: #f3f7f9;
   background-size: cover;
 }
 
+.identity-description {
+  margin-top: 15rem;
+}
+
 .identity-section h2 {
-  font-size: 60px
+  font-size: 6rem;
 }
 
 .identity-section h2 span {
   color: #16d0c5
 }
 
+.identity-img {
+  width: 100%;
+}
+
+.identity-team-description {
+  padding: 0;
+  padding: 0 3rem;
+
+}
+
+.identity-team-description p {
+  font-size: 1.7rem;
+}
+
+.identity-team h2 {
+  font-size: 2.3rem;
+}
+
 /*---------------------
   Key Section
 ---------------------*/
 .key-section {
-  padding: 20px 20px;
-  font-size: 0.5rem;
-  background: linear-gradient(to right, #0080cc, #16d0c5);
+  background: linear-gradient(to right, #00a3cc, #00c798);
 }
 
 .key-section h2 {
-  font-size: 1.8rem;
-  color: #f3f7f9;
-  margin-bottom: 10px;
-}
-
-.key-section h3 {
-  color: #333333;
-  font-size: 1.5rem;
+  margin: 0;
+  font-size: 2rem;
 }
 
 /*---------------------
   Introduction Section
 ---------------------*/
-.introduction-section {
-  padding: 50px 0;
-  display: flex;
-  justify-content: center;
+.introduction-section .row {
+  margin: 2rem 0;
 }
 
-.introduction-section h2 {
-  margin-bottom: 40px;
-}
-
-.member {
-  margin: 20px 10px;
-  padding: 0 0 20px 0;
-
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-}
-
-.member .row {
-  display: flex;
-  align-items: center;
-
-  margin: 20px 0;
-}
-
-.member-profile {
+.introduction-profile {
   padding: 20px 0;
   background-color: #f3f7f9;
-}
 
-.member-name {
-  display: block;
   text-align: center;
 }
 
-.member-comment {
-  margin: 20px 0 10px 0;
-  text-align: center;
-}
-
-.member-profile h3 {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: 600;
-  padding-left: 10px;
-  margin-right: 5px;
-}
-
-.member-career {
-  padding: 20px;
-}
-
-.member h4 {
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.member-profile p {
-  margin-bottom: 0px;
-  display: inline-block;
-}
-
-.member-portrait {
+.introduction-portrait {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 15rem;
+  height: 15rem;
   overflow: hidden;
   border-radius: 50%
 }
 
-.member-img {
+.introduction-portrait-img {
   width: 100%;
   height: auto;
 }
 
-.member ul {
-  list-style-type: disc;
+.introduction-profile h3 {
+  display: inline-block;
   margin-bottom: 0;
+  font-weight: 600;
 }
 
+.introduction-profile h3 span {
+  margin-left: 1rem;
+
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+
+.introduction-hashtag {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.introduction-hashtag li {
+  display: inline;
+  color: #0080cc;
+}
+
+.introduction-description-container {
+  padding: 20px 0;
+}
+
+.introduction-index {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.introduction-description-container ul {
+  list-style-type: circle;
+}
+
+.introduction-data_manager-profile {
+  background: #f3f7f9;
+}
+
+.introduction-data-manager-portrait img {
+  width: 15rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.introduction-data-manager-portrait h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.introduction-data_manager-hashtag {
+  display: block;
+  margin: 0 auto;
+}
+
+.introduction-data_manager-hashtag ul {
+  color: #0080cc;
+  list-style-type: none;
+}
 
 /*---------------------
   Feature Section
@@ -248,82 +283,91 @@ h2 {
 
 
 /*---------------------
-  Curriculum Section
+  Report Section
 ---------------------*/
-.curriculum-section {
+.report-section {
+  background: linear-gradient(to bottom, #00a3cc,#00c798);
+}
+
+.report-title-description {
+  width: 50%;
+  margin: 0 auto 5rem;
+}
+
+.report-circle {
+  background-color: #f3f7f9;
   padding: 2rem 0;
-  width: 100%;
-  background: linear-gradient(to right, #00a3cc, #00c798);
+  margin: 0 auto;
+
+  border-radius: 50%;
+
+  width: 10rem;
+  height: 10rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.report-circle h3 {
+  font-weight: 600;
+  font-size: 1.7rem;
+
+  margin: 0;
+}
+
+.report-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.report-img {
+  width: 75%;
+  margin-bottom: 2rem;
+}
+
+.report-list {
+  margin: 2rem 0 10rem;
+}
+
+.report-description h4 {
+  font-weight: bold;
+  
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.report-description ul {
+  list-style-type: circle;
+}
+
+.report-description li {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
 }
 
 .curriculum-section h3 {
-  font-size: 1.7rem;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #0080cc;
+  margin-bottom: 2rem;
 }
 
-.curriculum-img {
-  display: block;
-
-  margin: 0 auto 1rem;
-  height: 85%;
-  
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.curriculum-description h4{
+  font-size: 3rem;
 }
 
-.curriculum-img-overlap {
-  display: block;
-
-  margin-bottom: 1rem;
-  width: 70%;
-  
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.curriculum-container-overlap {
-  position: relative;
-  height: 35vw;
-
-  margin: 0 auto;
-  display: block;
-}
-
-.curriculum-container {
-  height: 35vw;
-
-  margin: 0 auto;
-  display: block;
-}
-
-.front {
-  position: absolute;
-  top: 5rem;
-  left: 0;
-  z-index: 1;
-
-  border-radius: 1rem;
-  width: 60%;
-}
-
-.back {
-  position: absolute;
-  top: 0;
-  left: 40%;
-
-  border-radius: 1rem;
-  width: 60%;
-}
-
-.curriculum-section ul {
-  list-style-type: square;
+.curriculum-description li{
+  font-size: 2.5rem;
 }
 
 /*---------------------
   Footer Section 
 ---------------------*/
 .footer-section {
-  display: flex;
-  align-items: center;
   background: linear-gradient(to right, #0080cc, #16d0c5);
-  height: 4rem;
+
+  padding: 2rem 0;
 }
 
 .footer-section p {
@@ -347,11 +391,13 @@ h2 {
     font-size: 13px;
   }
 
-  .curriculum-container {
-    position: relative;
-    
-    height: 40vh;
+  .introduction-data_manager-hashtag ul {
     display: block;
+    margin: 0 auto;
+  }
+
+  .introduction-data_manager-hashtag li {
+    display: inline-block;
   }
 }
 
@@ -361,29 +407,16 @@ h2 {
     font-size: 10px;
   }
 
-  .curriculum-img {
-    height: 45%;
+  .introduction-data_manager-hashtag ul {
+    display: inline-block;
   }
 
-  .curriculum-container-overlap {
-    position: relative;
-    
-    height: 50vh;
-    display: block;
+  .introduction-data_manager-hashtag li {
+    display: inline-block;
   }
 
-  .curriculum-container {
-    position: relative;
-    
-    height: 50vh;
-    display: block;
+  .report-title-description {
+    width: 80%;
   }
 
-  .curriculum-img {
-    height: 85%;
-  }
-
-  .curriculum-section {
-    height: 300vh;
-  }
 }
