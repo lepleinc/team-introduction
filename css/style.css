@@ -215,6 +215,22 @@ section {
 
 .introduction-description-container {
   padding: 20px 0;
+  width: 100%;
+}
+
+.introduction-description-container-data_manager {
+  padding: 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.introduction-description-wrapper {
+  display: flex;
+
+  align-items: center;
+  height: 375px;
 }
 
 .introduction-index {
@@ -228,6 +244,11 @@ section {
 
 .introduction-data_manager-profile {
   background: #f3f7f9;
+}
+
+.introduction-data_manager-profile .row {
+  display: flex;
+  align-items: center;
 }
 
 .introduction-data-manager-portrait img {
@@ -405,6 +426,10 @@ section {
 @media only screen and (max-width: 479px) {
   body {
     font-size: 10px;
+  }
+
+  .introduction-index {
+    font-size: 1.1rem;
   }
 
   .introduction-data_manager-hashtag ul {
