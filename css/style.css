@@ -228,9 +228,7 @@ section {
 
 .introduction-description-wrapper {
   display: flex;
-
   align-items: center;
-  height: 375px;
 }
 
 .introduction-index {
@@ -313,6 +311,10 @@ section {
 .report-title-description {
   width: 50%;
   margin: 0 auto 5rem;
+}
+
+.report-title-description p {
+  font-size: 1.7rem;
 }
 
 .report-circle {
